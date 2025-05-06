@@ -1,42 +1,80 @@
-# ✨ Full Stack Realtime Chat App ✨
+# Fullstack Chat Application
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A real-time chat application built with modern web technologies.
 
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
+## Technologies Used
 
-Highlights:
+- **Frontend**:
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - Socket.io-client
 
-- 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
-- 🎃 Authentication && Authorization with JWT
-- 👾 Real-time messaging with Socket.io
-- 🚀 Online user status
-- 👌 Global state management with Zustand
-- 🐞 Error handling both on the server and on the client
-- ⭐ At the end Deployment like a pro for FREE!
-- ⏳ And much more!
+- **Backend**:
+  - Node.js
+  - Express
+  - MongoDB
+  - Socket.io
 
-### Setup .env file
+## Features
 
-```js
-MONGODB_URI=...
-PORT=5001
-JWT_SECRET=...
+- Real-time messaging
+- User authentication
+- Message history
+- Online user status
+- Modern and responsive UI
 
-CLOUDINARY_CLOUD_NAME=...
-CLOUDINARY_API_KEY=...
-CLOUDINARY_API_SECRET=...
+## Getting Started
 
-NODE_ENV=development
+### Prerequisites
+
+- Node.js (v14 or higher)
+- MongoDB Atlas account
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd fullstack-chat-app
 ```
 
-### Build the app
+2. Install dependencies:
+```bash
+# Install root dependencies
+npm install
 
-```shell
-npm run build
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Install backend dependencies
+cd ../backend
+npm install
 ```
 
-### Start the app
-
-```shell
-npm start
+3. Set up environment variables:
+Create a `.env` file in the backend directory with the following variables:
 ```
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
+
+4. Start the application:
+```bash
+# Start backend (from backend directory)
+npm run dev
+
+# Start frontend (from frontend directory)
+npm run dev
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
