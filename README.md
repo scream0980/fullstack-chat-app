@@ -42,7 +42,6 @@ cd fullstack-chat-app
 
 2. Install dependencies:
 ```bash
-# Install root dependencies
 npm install
 
 # Install frontend dependencies
@@ -64,10 +63,8 @@ PORT=5000
 
 4. Start the application:
 ```bash
-# Start backend (from backend directory)
 npm run dev
 
-# Start frontend (from frontend directory)
 npm run dev
 ```
 
